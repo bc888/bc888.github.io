@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+body{
+       
+        margin: 0px;
+        font-family: 'Stint Ultra Condensed', cursive;
+}
+
+.top-nav{
+    background-color: black;
+    overflow: hidden;
+}
+
+.top-nav a{
+    color: chocolate;
+    display: block;
+    padding: 14px 16px;
+    float: right;
+    
+}
