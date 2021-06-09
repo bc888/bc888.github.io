@@ -1,20 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+/* Master styles */
+body {
+    margin: 0px;
 
-body{
-       
-        margin: 0px;
-        font-family: 'Stint Ultra Condensed', cursive;
 }
 
-.top-nav{
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     background-color: black;
-    overflow: hidden;
 }
 
-.top-nav a{
-    color: chocolate;
-    display: block;
-    padding: 14px 16px;
-    float: right;
+.left-side {
+    display: flex;
+
+}
+
+.nav-wrapper> .left-side > div {
+    display: flex;
+    margin-right: 25px;
+    font-size: 1.3em;
+    text-transform: uppercase; 
     
 }
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s
+}
+
+.nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 3px solid rgb(255, 94, 0);
+}
+
+.nav-link-wrapper a :hover {
+    color: black;
+}
+
+/* Portfolio styles */
