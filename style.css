@@ -25,16 +25,59 @@ a{
     justify-content: center;
 }
 
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(255, 89, 0);
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 30px;
+    transition: .4s ease;
+    transition-property: background-color, color;
 
+}
+.cta:hover {
+    color: white;
+    background-color: orangered ;
+}
 
 /* about Section*/
 
     #about .about {
+        justify-content: flex-start;
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
         padding: 100px 0;
         background-color: gray;
+
+    }
+    #about .col-left{
+        width: 25px;
+        height: 36px;
+    }
+
+    #about .col-right{
+        width:100%;
+    }
+    
+    #about .col-right h2{
+        font-size: 1.75rem;
+        font-weight: bold 500;
+        letter-spacing: .3rem;
+        margin-bottom: 10px;
+    }
+
+    #about .col-right p {
+        margin-bottom: 20px;
+    }
+
+    #about .col-right .cta{
+        color: white;
+        margin-bottom: 20px;
     }
 
     #about .section-title{
@@ -50,8 +93,10 @@ a{
     }
     #about .section-title span{
         color: orangered;
+        
     }
     #about .about-top p{
+        
         font-size: 1.6rem;
         margin-top: 5px;
         line-height: 2.5rem;
@@ -188,25 +233,9 @@ a{
 }#hero h1:nth-child(3) span{
     animation-delay: 3s;
 }
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid rgb(255, 89, 0);
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    margin-top: 30px;
-    transition: .4s ease;
-    transition-property: background-color, color;
 
-}
 
-#hero .cta:hover {
-    color: white;
-    background-color: orangered ;
-}
+
 
 /* End background hero section */
 
@@ -253,7 +282,7 @@ a{
     color: black;
 }
 
-
+     
 
 /* keyframes */
 @keyframes reveal_name_box {
